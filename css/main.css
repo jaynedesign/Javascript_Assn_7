@@ -1,0 +1,268 @@
+/* Do not change any line marked -keep- */
+
+html {
+    font-size: 100%; /* keep */
+    box-sizing: border-box; /* keep */
+}
+* {
+    box-sizing: inherit; /* keep */
+}
+
+body {font-family: 'PT Sans', 'Tahoma', sans-serif;
+    background: #1b172e; /* keep */
+    color: #333; /* keep */
+    margin: 0; /* keep */
+}
+
+h1 {
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  margin: 0;
+  font-size: 3rem;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+
+h2 {
+  font-family: 'Solway', 'Palatino', serif;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+
+header {
+  background-color: #1b172e;
+  padding-top: 3rem;
+}
+
+nav {
+    list-style: none;
+    text-decoration: none;
+  }
+
+nav ul li {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+div {display: block;
+  margin: 0;}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.jayne {
+  color: #ba81e6;
+font-weight: bold;
+}
+
+.details {
+  color: #390461;
+font-weight: bold;
+}
+
+/* grid container */
+#container {
+    max-width: 1200px; /* keep */
+    margin: auto; /* keep */
+    margin-left: 0;
+    display: grid; /* keep */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+
+    grid-template-areas:
+      "header header header"
+      "aboutJayne aboutJayne aboutJayne"
+      "saudi agnew running"
+      "horn triptych horse"
+      "maya boy sketch1"
+      "footer footer footer"
+}
+    /*
+      "horn saudi maya"
+      "triptych agnew boy"
+      "horse running sketch1"
+*/
+
+header {
+    grid-area: header; /* keep */
+    background: #000; /* keep */
+    text-align:center;
+    margin: 0;
+    background: #262142;
+    color: #fff;
+}
+
+#menu {
+  list-style: none;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+#aboutJayne {
+    grid-area: aboutJayne ; /* keep */
+    padding: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#saudi {
+    grid-area: saudi;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+}
+
+#clickr {
+    grid-area: agnew;
+    background: #e6e6ff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5rem;
+    padding-bottom: 7rem;
+    cursor: pointer;
+}
+
+#lady{
+  grid-area: agnew;
+  cursor: pointer;
+  background: #e6e6ff; /* keep */
+  margin: 0;
+  padding: 2rem;
+}
+#story {
+  grid-area: agnew;
+background: #e6e6ff;
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+margin: 0;
+padding: 2rem;
+cursor: pointer;
+}
+
+
+
+#running{
+    grid-area: running;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+}
+
+#horn {
+    grid-area: horn;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+}
+
+#triptych{
+    grid-area: triptych;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+
+}
+
+#horse {
+    grid-area: horse;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+}
+
+#maya{
+    grid-area: maya;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+
+}
+#boy{
+    grid-area: boy;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+}
+
+#sketch1{
+    grid-area: sketch1;
+    background: #e6e6ff;
+    margin: 0;
+    padding: 2rem;
+}
+
+footer {
+    grid-area: footer;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 6rem;
+    margin: 0;
+}
+
+footer p { font-size: .8rem;}
+footer ul li { list-style: none;
+color: #fff;
+text-decoration: none;}
+
+/* end of all 10 grid items */
+
+
+/* pseudo classes */
+
+a {
+    color: #7c6a60; /* keep */
+    text-shadow: none;
+    list-style: none;
+
+}
+a:hover {
+    color: #f4cdb7; /* keep */
+    text-decoration: none; /* keep */
+
+}
+
+footer a {  color: #ff00ff;
+  text-decoration: none;
+}
+
+footer a:hover {  color:
+ #33cccc;
+  text-decoration: none;
+}
+
+
+/* media queries below - only 1 is needed */
+@media screen and (max-width: 700px)
+{
+  #container {
+grid-template-columns: repeat(1, auto);
+grid-template-rows: repeat(12, auto);
+
+grid-template-areas:
+"header"
+"aboutJayne"
+"horn"
+"triptych"
+"horse"
+"saudi"
+"agnew"
+"running"
+"maya"
+  "boy"
+  "sketch1"
+"footer";
+}
+
+}
